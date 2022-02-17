@@ -1,0 +1,57 @@
+print()
+print("Olenchuk Ivan Practice Job 5")
+print()
+
+print('Part 1')
+print()
+l = []
+for i in range(1, 31):
+    l.append(i**2)
+print(l)
+print()
+print('Part 2')
+print()
+exam_st_date = (11, 12, 2014)
+print(f"Дата екзамена: {exam_st_date[0]}/{exam_st_date[1]}/{exam_st_date[2]}!")
+print()
+print('Part 3')
+print()
+s = input("Введіть окремі числа: ")
+while "," in s:
+    s = s.replace(",", " ")
+
+s = s.split()
+st = tuple(s)
+print(s, st)
+print()
+print('Part 4')
+print()
+x = [1, 2, 3, 4]
+y = [1, 5]
+
+flag = False
+for i in x:
+    if flag is False:
+        for j in y:
+            if i == j:
+                flag = True
+                break
+    else:
+        break
+if flag is True:
+    print("Є однакові цінності")
+else:
+    print("Немає однакових цінностей")
+print()
+print('Part 5')
+print()
+# tests
+# [[10, 0], [3, 5], [5, 8]] Result is 5
+# [[3, 0], [9, 1], [4, 10], [12, 2], [6, 1], [7, 10]] Result is 17
+# [[3, 0], [9, 1], [4, 8], [12, 2], [6, 1], [7, 8]] Result is 21
+l = [[3, 0], [9, 1], [4, 8], [12, 2], [6, 1], [7, 8]]
+passengers = 0
+for i in l:
+    passengers += i[0]
+    passengers -= i[1]
+print(f"існує {passengers} соня")
