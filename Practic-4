@@ -1,0 +1,53 @@
+print('Завдання 1')
+print('')
+x = input('Введіть 4 числа: ')
+print(max(x))
+print('')
+print('Завдання 2')
+print('')
+z = int(input('Число: '))
+if z % 4 == 0 and z % 100 != 0:
+    print('YES')
+elif z % 400 == 0:
+    print('YES')
+else:
+    print('NO')
+print('')
+print('Завдання 3')
+print('')
+a = int(input('Введіть будь яке число: '))
+b = int(input('Введіть будь яке число: '))
+c = int(input('Введіть будь яке число: '))
+a, b, c = sorted([a, b, c])
+if a + b <= c:
+    print('Такого трикутника не існує!')
+elif c**2 == (a**2) + (b**2):
+    print('Цей трикутник - Прямокутний!')
+elif ((a**2) + (b**2) - (c**2)) / (2 * a * b) > 0:
+    print('Цей трикутник - Гострокутний!')
+else:
+    print('Цей трикутник - Тупокутний!')
+print('')
+print('Завдання 4')
+print('')
+for x in range(0,100):
+    if x % 7 == 0:
+        print(x)
+print('')
+print('Завдання 5')
+print('')
+g = int(input('Введіть будь яке число: '))
+factorial = 1
+while g > 1:
+    factorial *= g
+    g -= 1
+print(factorial)
+print('')
+print('Завдання 7')
+print('')
+for num in range(2,101):
+    if all(num%i!=0 for i in range(2,num)):
+       print (num)
+
+print('')
+print('Дякую за увагу!')
