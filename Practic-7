@@ -1,0 +1,126 @@
+print('Pracitc Job 7, Olenchuk Ivan')
+print()
+print('Part 1')
+print()
+s = input("input smthn з дужками: ")
+t = ""
+for i in range(0, len(s)):
+    if s[i] == "'":
+        t += '"'
+    elif s[i] == '"':
+        t += "'"
+    else:
+        t += s[i]
+s = t
+print(s)
+print()
+print('Part 2')
+print()
+s = input("iput паліндромe: ")
+i, j = 0, len(s) - 1
+flag = True  # Припускаючи, що слово є паліндромом, поки не буде доведено, що воно неправильне
+t = s.lower()
+while i < j and flag:
+    if t[i] != t[j]:
+        flag = False
+        break
+    i += 1
+    j -= 1
+print(flag)
+print()
+print('Part 3')
+print()
+s = input("вхідний рядок для розділення: ")
+splitter = input("Введіть символ для розділення: ")
+res = []
+while s.find(splitter) > -1:
+    splitter_index = s.find(splitter)
+    res.append(s[0:splitter_index])
+    s = s[splitter_index+len(splitter):]  # Видалення рядка за допомогою спліттера
+res.append(s)
+print(res)
+print()
+print('Part 4')
+print()
+s = input("введення послідовності слів: ")
+first_index = 0
+last_index = s.find(" ")
+longest_word = s[first_index:last_index]
+while last_index != -1:
+    first_index += last_index + 1
+    last_index = s[first_index:].find(" ")
+    if len(s[first_index:first_index+last_index]) > len(longest_word):
+        longest_word = s[first_index:first_index+last_index]
+if len(s) - first_index > len(longest_word):
+    longest_word = s[first_index:]
+print(longest_word)
+print()
+print('Part 5')
+print()
+s = input("введіть ціле число: ")
+res = 0
+for i in s:
+    if int(i) % 2 != 0:
+        res += int(i)
+print(res)
+print()
+print('Part 6')
+print()
+t = str(bin(int(s)))[2:]
+res = 0
+for i in t:
+    res += int(i)
+print(res)
+print()
+print('Part 7')
+print()
+directions = ["Північ", "Схід", "Захід", "Південь", "ЗАХІД", "ЗАХІД"]
+n = 0
+s = 0
+w = 0
+e = 0
+for i in directions:
+    if i == "Північ":
+        n += 1
+    elif i == "Південь":
+        s += 1
+    elif i == "Захід":
+        w += 1
+    else:
+        e += 1
+
+x = abs(e-w)
+y = abs(n-s)
+if n > s:
+    for i in range(0, s):
+        directions.remove("Північ")
+        directions.remove("Південь")
+else:
+    for i in range(0, n):
+        directions.remove("Північ")
+        directions.remove("Південь")
+
+if e > w:
+    for i in range(0, w):
+        directions.remove("Захід")
+        directions.remove("Схід")
+else:
+    for i in range(0, e):
+        directions.remove("Захід")
+        directions.remove("Схід")
+print(directions)
+print()
+print('Part 8')
+print()
+words = ["","bc","","cd"]
+l = len(words)
+res = []
+for i in range(0, l):
+    if words[i] == "":
+        print("Порожнє слово!")
+        break
+    res.append(words[i])
+    if i < l-1 and words[i+1] != "":
+        if words[i][len(words[i])-1] != words[i+1][0]:
+            break
+print(res)
