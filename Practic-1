@@ -1,0 +1,71 @@
+print("Task 1")
+print(0)
+print()
+print("Task 2")
+print(0.0)
+print()
+print("Task 3")
+print(101)
+print()
+print("Task 4")
+print(1000.0)
+print()
+print("Task 5")
+print(10**3)
+print()
+print("Task 6")
+
+number = int(input('Введіть позитивне число '))
+if number < 0:
+  print('Помилка')
+if number > 0:
+  print(number)
+if number == 0:
+  print('Помилка')
+print('')
+
+number = int(input('Введіть негативне число '))
+if number < 0:
+  print(number)
+if number > 0:
+  print("Помилка")
+if number == 0:
+  print('Помилка')
+print('')
+
+number = int(input('Введіть число 0 '))
+if number < 0:
+  print('Помилка')
+if number > 0:
+  print('Помилка')
+if number == 0:
+  print(number)
+
+print()
+print("Task 7")
+print("(A+B)/C")
+a = int(input("Число(A)"))
+b = int(input("Число(B)"))
+c = int(input("Число(C)"))
+d = (a + b)/c
+print(d)
+print()
+print("A*B-C")
+a = int(input("Число(A)"))
+b = int(input("Число(B)"))
+c = int(input("Число(C)"))
+d = (a*b-c)
+print(d)
+print()
+print("Task 3.1")
+x = int(input("Введіть номер картки "))
+print(x % 10000)
+print()
+print("Task 3.2")
+a = input("Введіть трьохзначне число: ")
+a = int(a)
+b1 = a % 10
+a = a // 10
+b2 = a % 10
+a = a // 10
+print("Сумма цифр числа:", a + b1 + b2)
