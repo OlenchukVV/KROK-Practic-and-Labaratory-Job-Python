@@ -1,0 +1,88 @@
+print("Практична робота 2")
+print()
+print("Task 1")
+print()
+print('1.1 Парне або непарне')
+num = int(input("Введіть число: "))
+if (num % 2) == 0:
+   print("Число {0} Парне".format(num))
+else:
+   print("Число {0} Непарне".format(num))
+print()
+print('1.2 Кратне 60')
+x = int(input("Введіть число кратне 60: "))
+if x % 60 != 0:
+    print("Помилка")
+elif x % 60 == 0:
+   print(x//60)
+print()
+print('2.1 Позитивні числа')
+a = int(input('Введіть позитивні числа(1): '))
+b = int(input('Введіть позитивні числа(2): '))
+if a <= 0:
+    print('Помилка, числа не позитивні!')
+elif b <= 0:
+    print('Помилка, числа не позитивні!')
+else: print(a,b)
+print()
+print('2.2 Позитивні та негативні числа')
+a = int(input("Введіть позитивні або негативні числа(1):"))
+b = int(input("Введіть позитивні або негативні числа(2):"))
+if a <= 0 and b <= 0:
+    print(a,b)
+elif a >= 0 and b >= 0:
+    print(a,b)
+else: print("Помилка")
+print()
+print('2.3 Одне негативно, інше позитивне')
+a = int(input("Введіть позитивне або негативне число(1):"))
+b = int(input("Введіть позитивне або негативне число(2):"))
+if a <= 0 and b <= 0:
+    print("Помилка")
+elif a >= 0 and b >= 0:
+    print("Помилка")
+else: print(a,b)
+print()
+print('3.1 Мають однакові значення')
+a = int(input("Введіть позитивне або негативне число(1):"))
+b = int(input("Введіть позитивне або негативне число(2):"))
+c = int(input("Введіть позитивне або негативне число(3):"))
+if a != b and a != c:
+    print('Помилка')
+elif b != a and b != c:
+    print('Помилка')
+elif c != a and c != b:
+    print('Помилка')
+else:print(a,b,c)
+print()
+print('3.2 Прив’язані до різних значень (жоден не однаковий)')
+a = int(input("Введіть позитивне або негативне число(1):"))
+b = int(input("Введіть позитивне або негативне число(2):"))
+c = int(input("Введіть позитивне або негативне число(3):"))
+if a == b or a ==c:
+    print('Помилка')
+elif b == a or b == c:
+    print('Помилка')
+elif c == a or c == b:
+    print('Помилка')
+else:print(a,b,c)
+print()
+print('3.3 Дві змінні зберігають однакове значення, але третя відрізняється')
+a = int(input("Введіть позитивне або негативне число(1):"))
+b = int(input("Введіть позитивне або негативне число(2):"))
+c = int(input("Введіть позитивне або негативне число(3):"))
+if a == b and a != c:
+    print(a,b,c)
+elif a != b and a == c:
+    print(a,b,c)
+elif b != a and b == c:
+    print(a,b,c)
+elif b == a and b != c:
+    print(a,b,c)
+elif c != a and c == b:
+    print(a,b,c)
+elif c == a and c != b:
+    print(a,b,c)
+else:print("Помилка")
+print('')
+print('Практична робота завершена!')
