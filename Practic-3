@@ -1,0 +1,73 @@
+print('Практична робота #3')
+print('')
+int(input('Щоб розпочати перегляд коду №1, введіть 1: '))
+print('                      PART 1                ')
+print('')
+for number in range(1, 10):
+    if number % 1 == 0:
+        print(number)
+print('')
+int(input('Щоб розпочати перегляд коду №2, введіть 1: '))
+
+print('')
+print('                      PART 2                ')
+print('')
+for number in range(9, 0, -1):
+    if number % 1 == 0:
+        print(number)
+print('')
+int(input('Щоб розпочати перегляд коду №3, введіть 1: '))
+
+print('')
+print('                      PART 3                ')
+print('')
+start, end = 5, 13
+for number in range(start, end + 1):
+    if number % 2 != 0:
+        print(number, end=" ")
+print('')
+int(input('Щоб розпочати перегляд коду №4, введіть 1: '))
+
+print('')
+print('')
+print('                      PART 4                ')
+print('')
+
+num_str = input("Впишіть будь-яке число окрім нуля(0): ")
+num_int=int(num_str)
+even_count=0
+odd_count=0
+even_sum=0
+odd_sum=0
+
+while num_int !=0:
+   num_str = input("Впишіть будь-яке число,окрім нуля(0): ")
+   num_int=int(num_str)
+for num_int in num_str:
+        if num_int == 0:
+            print("Помилка")
+print('')
+int(input('Щоб розпочати перегляд коду №5, введіть 1: '))
+print('')
+print('                      PART 5                ')
+print('')
+n1 = input("Введіть число: ")
+n_list = list(n1)
+n_list.reverse()
+n2 = "".join(n_list)
+print('Зворотнє число:', n2)
+print('')
+int(input('Щоб розпочати перегляд коду №6, введіть 1: '))
+print('')
+print('                      PART 6                ')
+print('')
+n = int(input('Введіть число: '))
+
+factorial = 1
+while n > 1:
+    factorial *= n
+    n -= 1
+
+print(factorial)
+print('')
+int(input('Щоб закінчити перегляд коду, введіть 1: '))
