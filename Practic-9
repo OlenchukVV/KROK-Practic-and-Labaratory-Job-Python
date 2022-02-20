@@ -1,0 +1,20 @@
+import numpy as np
+import random
+
+print('Practic Job 9')
+print('Olenchuk Ivan')
+print()
+
+k = 0
+h = 0
+five = 0
+matrix = np.random.randint(0, 15, (10, 20))
+
+for k in range(10):
+    for h in range(20):
+        if matrix[k][h] == 5:
+            five += 1
+    if five >= 3:
+        print(k)
+        five = 0
+    print(matrix)
