@@ -1,0 +1,22 @@
+x = float(input('3 цілих числа = '))
+print('{:3d}'.format(int(x)))
+print('%d'%x)
+print(f'{x}')
+print()
+y = float(input('Число = '))
+print('{:10f}'.format(int(y)))
+print('%d'%y)
+print(f'{y}')
+z = float(input('Число = '))
+print(f"{z:6.3f}")
+print('%d'%z)
+print(f'{z}')
+print()
+d = str(input('Введіть 4 символи = '))
+(len(d))
+if len(d) > 4:
+    print('False')
+if len(d) < 4:
+    print('False')
+if len(d) ** 4:
+    print('True')
