@@ -1,0 +1,16 @@
+x = float(input('3 цілих числа ='))
+print('{:4d}'.format(int(x)))
+print()
+b = float(input('Numbers ='))
+print('{:10f}'.format(int(b)))
+c = float(input('Numbers ='))
+print(f"{c:6.3f}")
+print()
+d = str(input('Введіть 4 символи ='))
+(len(d))
+if len(d) > 4:
+    print('False')
+if len(d) < 4:
+    print('False')
+if len(d) ** 4:
+    print('True')
